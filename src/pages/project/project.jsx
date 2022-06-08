@@ -22,6 +22,5 @@ export default function Project(){
             {projects.map(project => <Link to={`/project/${project.urlname}`}>
                                 <p> {project.year} {project.name} {project.category}</p>
                             </Link>)}
-        </h1>;
-    
+        </h1>;   
 }

@@ -5,8 +5,8 @@ import Pagenav from './links/links'
 
 export default function Nav(){
     return <nav>
-            <Pagenav text="Works" link="youtube.com"></Pagenav>
-            <Pagenav text="About" link="youtube.com"></Pagenav>
+            <Pagenav text="Works" link="/works"></Pagenav>
+            <Pagenav text="About" link="/about"></Pagenav>
             <Switch></Switch>
         </nav>
 }

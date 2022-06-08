@@ -26,7 +26,7 @@ export default function Works(){
                     </button>
                 </section>
                 <section className="works">
-                        {works.map(work => <Link to={`/project/${work.urlname}`}>
+                        {works.map(work => <Link className='work' to={`/project/${work.urlname}`}>
                                 <Card year={work.year} title={work.name} category={work.category}></Card>
                             </Link>)}
                     {/* <Card year='2022' title='emojiBook' category='Wordpress blog'></Card> */}

@@ -1,0 +1,62 @@
+.aboutContainer{
+    padding: 64px;
+    font-family: Satoshi;
+    color: #393D60;
+}
+
+.aboutTitle{
+    margin-bottom: 0;
+    font-size: 32px;
+}
+.infoContainer{
+    margin-top: 16px;
+    padding-top: 32px;
+    display: grid;
+    grid-template-columns: repeat(13,1fr);
+    font-family: basier_square_monoregular;
+    font-size: 24px;
+    border-top: 2px solid;
+}
+.mailButton{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    font-family: basier_square_monoregular;
+    font-size: 24px;
+    color: #393D60;
+    text-decoration: underline;
+    
+}
+
+.socialNetworks{
+    margin-top: 0;
+    grid-column-start: 5;
+    grid-column-end: 7;
+    list-style: none;
+    padding-left: 0px;
+    text-decoration: underline;
+}
+
+.socialNetwork{
+    text-decoration: underline;
+    padding-left: 0px;
+}
+
+.socialNetwork:not(:first-child){
+    margin-top: 16px;
+}
+.socialNetworkLink{
+    color: #393D60;
+    
+}
+.socialNetworkLink:visited{
+    color: #393D60;
+
+}
+.aboutPresentation{
+    margin-top: 0;
+    grid-column-start: 8;
+    grid-column-end: 14;
+}

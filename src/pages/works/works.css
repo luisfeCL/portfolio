@@ -20,7 +20,25 @@
     text-decoration: underline;
     border: none;
 }
+.works{
+    margin-top: 0 64px;
+    font-family: basier_square_monoregular;
+    font-size: 32px;
+    padding: 64px;
+    
+}
 
+.work{
+    padding: 16px 0px;
+    display: grid;
+    grid-template-columns: repeat(13,1fr);
+    border-bottom: 2px solid;
+}
+
+.work:first-child{
+    border-top: 2px solid;
+
+}
 
 /* .work:not(:first-child){
     margin-top: 32px;
