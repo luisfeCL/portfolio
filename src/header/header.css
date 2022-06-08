@@ -1,0 +1,11 @@
+header{
+    padding: 32px 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Satoshi-Variable;
+    color: #393D60;
+}
+a:visited{
+    color: #393D60;
+}

@@ -1,0 +1,7 @@
+a{
+    text-decoration: none;
+}
+.logo{
+    grid-column-start: 1;
+    font-weight: 900;
+}

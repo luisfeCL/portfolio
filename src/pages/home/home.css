@@ -1,0 +1,49 @@
+.intro{
+    color: #393D60;
+    padding: 64px;
+    display: grid;
+    grid-template-columns: repeat(12,1fr)
+}
+.hello{
+    font-size: 64px;
+    font-family: Satoshi-Variable;
+    margin-bottom: 0px;
+    
+}
+
+.helloContainer{
+    grid-column-start: 1;
+    grid-column-end: 7;
+}
+.presentationContainer{
+    grid-column-start: 8;
+    grid-column-end: 13;
+    position: relative;
+    top: 50%;
+}
+.subtitle{
+    font-family: Satoshi-Variable;
+    font-size: 64px;
+    font-weight: normal;
+    margin-top: 0px;
+}
+.contactButton{
+    border: 2px solid #393D60;
+    cursor: pointer;
+    color: #393D60;
+    font-family: basier_square_monoregular;
+    font-size: 24px;
+    border-radius: 50px;
+    padding: 16px;
+
+    background-color: transparent;
+}
+.contactButton:hover{
+    color:white;
+    background-color: #393D60;
+}
+.presentationText{
+    font-family: basier_square_monoregular;
+    font-size: 24px;
+}
+

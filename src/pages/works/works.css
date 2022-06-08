@@ -1,0 +1,27 @@
+.sectionHeader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    margin: 64px 0 0 0;
+    font-size: 64px;
+    
+}
+
+.resumeButton{
+    margin-top: 16px;
+    grid-column-end: 8;
+    align-items: center;
+    display: flex;
+    font-size: 24px;
+    background-color: transparent;
+    text-decoration: underline;
+    border: none;
+}
+
+
+/* .work:not(:first-child){
+    margin-top: 32px;
+} */

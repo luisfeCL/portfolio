@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
+/*=============================================
+=            Tipografías                      =
+=============================================*/
+@font-face {
+    font-family: 'Satoshi-Variable';
+    src: url('./Fonts/Satoshi-Variable.woff2') format('woff2');
+        font-weight: 300 900;
+        font-display: swap;
+        font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+    font-family: 'basier_square_monoregular';
+    src: url('./Fonts/basiersquaremono-regular-webfont.woff2') format('woff2');      
+    font-weight: normal;
+    font-style: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/*=============================================
+=            Custom properties                =
+=============================================*/
+
+:root{
+    --container-bgcolor: linear-gradient(1.67deg, #F5E0A9 -24.41%, rgba(107, 172, 219, 0.5) 119.89%);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/*=============================================
+=            Estilos generales            =
+=============================================*/
+
+*{
+    box-sizing: borderbox;
 }
 
-.App-link {
-  color: #61dafb;
+html, body{
+    width: 100%;
+}
+body{
+    background-color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container{
+    background: var(--container-bgcolor);
+    width: 98vw;
+    height: 97vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 16px;
 }
+
+

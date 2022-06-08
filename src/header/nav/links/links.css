@@ -1,0 +1,6 @@
+.nav-link{
+    color: #393D60;
+}
+.nav-link:not(:first-child){
+    margin-left: 64px;
+}

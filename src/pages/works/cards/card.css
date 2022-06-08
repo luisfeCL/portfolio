@@ -1,0 +1,32 @@
+.works{
+    margin-top: 0 64px;
+    font-family: basier_square_monoregular;
+    font-size: 32px;
+    padding: 64px;
+    
+}
+
+.work{
+    padding: 16px 0px;
+    display: grid;
+    grid-template-columns: repeat(13,1fr);
+    border-bottom: 2px solid;
+}
+
+.workElement1{
+    margin: 0 auto 0 0;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.workElement2{
+    margin: 0 auto;
+    grid-column-start: 6;
+    grid-column-end: 9;
+}
+
+.workElement3{
+    margin: 0 0 0 auto;
+    grid-column-start: 11;
+    grid-column-end: 14;
+}
