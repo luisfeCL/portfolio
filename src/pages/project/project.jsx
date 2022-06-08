@@ -1,5 +1,9 @@
-import { useParams} from 'react-router-dom'
+import { useParams, Link} from 'react-router-dom'
 import './project.css'
+import axios from 'axios';
+import { useEffect, useState } from 'react';
+
+
 
 
 
@@ -7,9 +11,21 @@ import './project.css'
 
 export default function Project(){
 
+    const [project, setProject] = useState({});
+
     const params = useParams();
 
-    return <h1 className='projectTitle'> 
-            {params.name}
-        </h1>;   
+
+    useEffect(() => {
+        axios.get('/projects.json')
+            .then(response => {
+                const selectedWork = response.data.works.find(work => work.name === params.name)
+                setProject(selectedWork)
+            })
+    })
+
+    return <>
+        <h1>{project.id}</h1>
+    </>
+
 }
