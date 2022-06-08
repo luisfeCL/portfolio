@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom'
 
 export default function Works(){
 
-
     const [works, setWorks]= useState([]);
 
     useEffect(() => {
@@ -33,3 +32,4 @@ export default function Works(){
                 </section>
             </article>
 }
+
