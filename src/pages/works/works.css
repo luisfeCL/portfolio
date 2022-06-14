@@ -1,3 +1,6 @@
+.worksContainer{
+    margin-top: var(--space-large);
+}
 .sectionHeader{
     display: flex;
     flex-direction: column;

@@ -1,4 +1,5 @@
 .aboutContainer{
+    margin-top: var(--space-large);
     padding: 64px;
     font-family: Satoshi;
     color: #393D60;
@@ -6,7 +7,7 @@
 
 .aboutTitle{
     margin-bottom: 0;
-    font-size: 32px;
+    font-size: var(--subtitle-fontsize);
 }
 .infoContainer{
     margin-top: 16px;
@@ -58,5 +59,35 @@
 .aboutPresentation{
     margin-top: 0;
     grid-column-start: 8;
+    grid-column-end: 14;
+}
+.resume{
+    border-bottom: var(--border);
+    padding: var(--space) 0 var(--space) 0;
+    display: grid;
+    grid-template-columns: repeat(13,1fr);
+    font-family: var(--text-font);
+    font-size: var(--text-fontsize);
+}
+.resume:first-child{
+    margin-top: var(--space);
+    border-top: var(--border);
+}
+.resume__data1{
+    margin: 0 auto 0 0;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.resume__data2{
+    margin: 0 auto;
+    grid-column-start: 5;
+    grid-column-end: 10;
+    text-align: center;
+}
+
+.resume__data3{
+    margin: 0 0 0 auto;
+    grid-column-start: 11;
     grid-column-end: 14;
 }

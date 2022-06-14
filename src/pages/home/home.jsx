@@ -2,6 +2,7 @@ import "./home.css";
 
 export default function Home() {
     return (
+        <main className="container">
         <section className="intro">
             <article className="helloContainer">
                 <h1 className="hello">Hi, I'm Luisfe 👋</h1>
@@ -21,5 +22,6 @@ export default function Home() {
                 </p>
             </article>
         </section>
+        </main>
     );
     }

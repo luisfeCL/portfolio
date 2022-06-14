@@ -1,0 +1,21 @@
+.project__card{
+    background-color: var(--image-bgcolor);
+    min-height: 300px;
+    width: 500px;
+    border-radius: 15px;
+    border: none;
+}
+.project__card--title{
+    font-size: var(--text-fontsize);
+}
+.icons{
+    display: flex;
+    justify-content: center;
+}
+.icon{
+    height: var(--icons-fontsize);
+    width: var(--icons-fontsize);
+}
+.icon:not(:first-child){
+    margin-left: var(--space);
+}

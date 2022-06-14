@@ -8,7 +8,21 @@
             "name": "EmojiBook",
             "category": "Wordpress Blog",
             "description": "ESTA ES LA PAGINA DE EMOJIBOOK 1",
-            "Technologies": ["Wordpress", "HTML5", "CSS3"]
+            "Tech1": "Wordpress",
+            "Tech2": "HTML5",
+            "Tech3": "CSS3",
+            "Tech4": "JavaScript",
+            "color": "#FCB900",
+            "techimage1": "/wordpress.png",
+            "techimage2": "/html5.png",
+            "techimage3": "/javascript.png",
+            "techimage4": "/css3.png",
+            "objective1": "Crear una línea de identidad y una estética corportativa unificada para la marca.",
+            "objective2": "Conseguir que el diseño encaje con nuestro target principal de usuarios.",
+            "objective3": "Lograr una interfaz intuitiva y responsive",
+            "objective4": "Construir una web que tome la información de una fuente de datos (.json).",
+            "objective5": "Generar URLs dinámicas que pinten los productos en base a una única plantilla de HTML.",
+            "objective6": "Al tratarse de un negocio con idea de ampliar tipos de productos, era necesario que la web fuese escalable."
         },
         {
             "id": 2,
@@ -18,7 +32,15 @@
             "name": "EmojiBook 2",
             "category": "Wordpress Blog",
             "description": "ESTA ES LA PAGINA DE EMOJIBOOK 2",
-            "Technologies": ["Wordpress", "HTML5", "CSS3"]
+            "Tech1": "Wordpress",
+            "Tech2": "HTML5",
+            "Tech3": "CSS3",
+            "Tech4": "JavaScript",
+            "color": "white",
+            "techimage1": "/sass.png",
+            "techimage2": "/sass.png",
+            "techimage3": "/sass.png",
+            "techimage4": "/sass.png"
         }
     ]
 }

@@ -22,6 +22,19 @@
 
 :root{
     --container-bgcolor: linear-gradient(1.67deg, #F5E0A9 -24.41%, rgba(107, 172, 219, 0.5) 119.89%);
+    --image-bgcolor: white;
+    --title-fontsize: 6.4rem;
+    --title-font: Satoshi-Variable;
+    --text-fontsize: 2.4rem;
+    --text-font: basier_square_monoregular;
+    --subtitle-fontsize: 3.2rem;
+    --icons-fontsize: 6.4rem;
+    --font-color: #393D60;
+    --space-large:6.4rem;
+    --space: 3.2rem;
+    --space-small: 2.4rem;
+    --space-xsmall:1.6rem;
+    --border:2px solid;
 }
 
 /*=============================================
@@ -29,11 +42,12 @@
 =============================================*/
 
 *{
-    box-sizing: borderbox;
+    box-sizing: border-box;
 }
 
 html, body{
     width: 100%;
+    font-size: 62.5%;
 }
 body{
     background-color: white;
@@ -48,6 +62,7 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 16px;
+    z-index: -1;
 }
 
 

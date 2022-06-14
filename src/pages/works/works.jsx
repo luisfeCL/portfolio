@@ -13,7 +13,10 @@ export default function Works(){
         .then(response => setWorks(response.data.works));
     }, [])
 
-    return <article className='worksContainer'>
+    document.body.style.setProperty('--container-bgcolor', 'linear-gradient(1.67deg, #DF88CC -24.41%, rgba(82, 176, 182, 0) 119.89%)')
+
+    return <main className="container">
+    <article className='worksContainer'>
                 <section className='sectionHeader'>
                     <h1 className="title">
                         My projects
@@ -31,5 +34,6 @@ export default function Works(){
                     {/* <Card year='2022' title='emojiBook' category='Wordpress blog'></Card> */}
                 </section>
             </article>
+            </main>
 }
 

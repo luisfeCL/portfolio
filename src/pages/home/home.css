@@ -1,5 +1,6 @@
 .intro{
     color: #393D60;
+    margin-top: var(--space-large);
     padding: 64px;
     display: grid;
     grid-template-columns: repeat(12,1fr)

@@ -14,7 +14,7 @@ import About from './pages/about/about';
 function App() {
 return (
     <>
-        <main className='container'>
+
             <Header></Header>
             <Routes>
                 <Route path='/' element={<Home/>}></Route>
@@ -22,7 +22,9 @@ return (
                 <Route path='/project/:name' element={<Project/>}></Route>
                 <Route path='/about' element={<About/>}></Route>
             </Routes>
-        </main>
+        
+        
+            
     </>
 );
 }
