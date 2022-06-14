@@ -1,4 +1,10 @@
-
+.secondary{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(13,1fr);
+    padding: var(--space) 0px;
+    border-bottom: var(--border);
+}  
 .workElement1{
     margin: 0 auto 0 0;
     grid-column-start: 1;
@@ -15,4 +21,7 @@
     margin: 0 0 0 auto;
     grid-column-start: 11;
     grid-column-end: 14;
+}
+.inactive{
+    opacity: .5;
 }

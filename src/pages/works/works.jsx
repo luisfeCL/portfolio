@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom'
 export default function Works(){
 
     const [works, setWorks]= useState([]);
+    const [activeWork, setActiveWorks] = useState(true);
 
     useEffect(() => {
         axios.get('/projects.json')
@@ -27,13 +28,15 @@ export default function Works(){
                         </svg> My resume
                     </button>
                 </section>
-                <section className="works">
+                <section className="works" onMouseLeave={()=> setActiveWorks(false)}>
                         {works.map(work => <Link className='work' to={`/project/${work.urlname}`}>
-                                <Card year={work.year} title={work.name} category={work.category}></Card>
-                            </Link>)}
+                            <Card active={activeWork !== work.name} handleHover={() => setActiveWorks(work.name)} year={work.year} title={work.name} category={work.category}></Card>
+                        </Link>)}
                     {/* <Card year='2022' title='emojiBook' category='Wordpress blog'></Card> */}
                 </section>
             </article>
             </main>
 }
 
+
+// onMouseLeave={setActiveWorks(true)}

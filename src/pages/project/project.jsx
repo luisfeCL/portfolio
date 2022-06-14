@@ -6,19 +6,12 @@ import Image from './image/image';
 import Card from '../works/cards/card';
 
 
-
-
-
-
-
 export default function Project(){
 
     const [project, setProject] = useState({});
-    const [more, setMore] = useState({})
+    const [more, setMore] = useState([])
     const params = useParams();
     
-
-
     useEffect(() => {
         axios.get('/projects.json')
             .then(response => {
@@ -26,12 +19,12 @@ export default function Project(){
                 setProject(selectedWork)
             })
             .then(response => {
-                const moreWorks = response.data.works.find(work => work.urlname !== params.name )
+                const moreWorks = response.data.works.filter(other => other.urlname !== params.name )
                 setMore(moreWorks)
             })
-    })
+    },[])
 
-    
+debugger
     return <>
         <section className="project__container">
                 <article className="project__title">
@@ -85,9 +78,11 @@ export default function Project(){
 
         <h2 className='more__title'>More Projects</h2>
         <article className="more__projects">
-            <h1>
-                
-            </h1>
+            
+            {more.map(project => <div className='work'>
+                            {project.name}
+                        </div>)}
+            
         </article>
         </section>
     </>

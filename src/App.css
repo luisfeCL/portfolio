@@ -44,7 +44,9 @@
 *{
     box-sizing: border-box;
 }
-
+a{
+    color: var(--font-color);
+}
 html, body{
     width: 100%;
     font-size: 62.5%;

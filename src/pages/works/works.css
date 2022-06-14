@@ -33,8 +33,6 @@
 
 .work{
     padding: 16px 0px;
-    display: grid;
-    grid-template-columns: repeat(13,1fr);
     border-bottom: 2px solid;
 }
 
