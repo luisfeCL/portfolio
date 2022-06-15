@@ -1,13 +1,19 @@
 import "./home.css";
+import { useSpring, animated } from "react-spring";
+import ThemeContext from "../../context/themeContext";
+import { useContext } from 'react'
+
 
 export default function Home() {
+    const {theme} = useContext(ThemeContext)
+    const props = useSpring({ to: { opacity: 1 }, from: { opacity: 0 }, config: {duration:2000}})
     return (
-        <main className="container">
-        <section className="intro">
+        <animated.main style={props} className= "container" id={theme}>
+        <section id={theme} className="intro">
             <article className="helloContainer">
                 <h1 className="hello">Hi, I'm Luisfe 👋</h1>
                 <h2 className="subtitle">Frontend developer</h2>
-                <button className="contactButton">Get in touch!</button>
+                <button id={theme} className="contactButton">Get in touch!</button>
             </article>
             <article className="presentationContainer">
                 <p className="presentationText">
@@ -22,6 +28,6 @@ export default function Home() {
                 </p>
             </article>
         </section>
-        </main>
+        </animated.main>
     );
     }
