@@ -12,12 +12,14 @@
 }
 
 .workElement2{
+    text-align: center;
     margin: 0 auto;
     grid-column-start: 6;
     grid-column-end: 9;
 }
 
 .workElement3{
+    text-align: center;
     margin: 0 0 0 auto;
     grid-column-start: 11;
     grid-column-end: 14;

@@ -1,7 +1,7 @@
 .intro{
     color: #393D60;
     margin-top: var(--space-large);
-    padding: 64px;
+    padding: var(--space-large) var(--space-xlarge);
     display: grid;
     grid-template-columns: repeat(12,1fr)
 }
@@ -9,7 +9,6 @@
     font-size: 64px;
     font-family: Satoshi-Variable;
     margin-bottom: 0px;
-    
 }
 
 .helloContainer{
@@ -43,8 +42,73 @@
     color:white;
     background-color: #393D60;
 }
+.contactButton:visited{
+    text-decoration: none;
+}
 .presentationText{
     font-family: basier_square_monoregular;
     font-size: 24px;
 }
 
+
+
+@media (max-width: 1500px){
+    .presentationContainer{
+        top: 0;
+        margin-top: var(--space);
+    }
+}
+@media (max-width: 1300px){
+    .helloContainer{
+        grid-column-start: 1;
+        grid-column-end: 13;
+    }
+    .presentationContainer{
+        grid-column-start: 1;
+        grid-column-end: 13; 
+    }
+}
+@media (max-width: 920px){
+    .intro{
+        padding-bottom: 0;
+    
+    }
+    .hello{
+        font-size: var(--title-tabletfontsize);
+    }
+    .subtitle{
+        font-size: var(--title-tabletfontsize);
+    }
+    .contactButton{
+        font-size: var(--text-mobilefontsize);
+        padding: var(--unit);
+    }
+    .presentationText{
+        font-size: var(--text-tabletfontsize)
+        
+    }
+}
+@media (max-width: 760px){
+    .intro{
+        padding: var(--space-large) var(--space);
+    }
+    .presentationText{
+        font-size: var(--text-mobilefontsize);
+    }
+    .helloContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px){
+    
+    .hello{
+        font-size: var(--title-mobilefontsize);
+    }
+    .subtitle{
+        font-size: var(--title-mobilefontsize);
+    }
+
+}

@@ -1,6 +1,6 @@
 .aboutContainer{
     margin-top: var(--space-large);
-    padding: 64px;
+    padding: var(--space-large) var(--space-large) 0 var(--space-large);
     font-family: Satoshi;
     color: #393D60;
 }
@@ -29,6 +29,7 @@
     color: #393D60;
     text-decoration: underline;
     
+    
 }
 
 .socialNetworks{
@@ -37,11 +38,10 @@
     grid-column-end: 7;
     list-style: none;
     padding-left: 0px;
-    text-decoration: underline;
 }
 
 .socialNetwork{
-    text-decoration: underline;
+    
     padding-left: 0px;
 }
 
@@ -90,4 +90,33 @@
     margin: 0 0 0 auto;
     grid-column-start: 11;
     grid-column-end: 14;
+}
+
+@media (max-width: 1500px){
+    .infoContainer, .mailButton, .resume{
+
+        font-size: var(--text-mobilefontsize);
+
+    }
+}
+
+
+@media (max-width: 810px){
+    .container{
+        margin-top: 0;
+        overflow: scroll;
+    }
+    .aboutPresentation{
+        margin-top: 0;
+        grid-column-start:1;
+        grid-column-end: 14;
+        margin-top: var(--space);
+    }
+    .socialNetworks{
+        margin-top: 0;
+        grid-column-start: 10;
+        grid-column-end: 14;
+        list-style: none;
+        padding-left: 0px;
+    }
 }

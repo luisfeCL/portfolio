@@ -1,6 +1,11 @@
-.nav-link{
-    color: #393D60;
-}
+
 .nav-link:not(:first-child){
     margin-left: 64px;
+}
+@media (max-width: 600px){
+    
+    .nav-link:not(:first-child){
+        margin-left: 0;
+        margin-top: var(--space-large);
+    }
 }

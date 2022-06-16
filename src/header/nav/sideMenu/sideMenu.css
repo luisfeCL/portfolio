@@ -1,0 +1,36 @@
+.menu__container{
+    background: beige;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100vh;
+    padding: var(--space) var(--space-large);
+    transition: background 500ms ease-in-out;
+}
+.menu__close{
+    background-color: transparent;
+    border: none;
+    font-size: var(--subtitle-fontsize);
+}
+.menu{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    font-size: var(--title-fontsize);
+    align-items: center;
+    justify-content: center;
+}
+.theme__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (min-width: 600px){
+    
+    .menu__container{
+        display: none;
+    }
+
+}

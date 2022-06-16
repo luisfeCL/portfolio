@@ -1,6 +1,27 @@
 nav{
-    color: #393D60;
     display: flex;
     align-items: center;
     justify-content: basier_square_monoregular;
+}
+.open__menu{
+    background-color: transparent;
+    border: none;
+    font-family: var(title-font);
+    font-size: var(--text-mobilefontsize);
+    font-weight: 100;
+}
+@media (max-width: 600px){
+    
+    .nav__desktop{
+        display: none;
+    }
+
+}
+@media (min-width: 600px){
+    
+    .nav__mobile{
+        display: none;
+    }
+    
+
 }

@@ -5,6 +5,7 @@ import { useContext } from 'react'
 
 
 export default function Home() {
+    document.body.style.setProperty('--container-bgcolor', 'linear-gradient(1.67deg, #F5E0A9 -24.41%, rgba(107, 172, 219, 0.2) 119.89%)')
     const {theme} = useContext(ThemeContext)
     const props = useSpring({ to: { opacity: 1 }, from: { opacity: 0 }, config: {duration:2000}})
     return (
@@ -13,18 +14,15 @@ export default function Home() {
             <article className="helloContainer">
                 <h1 className="hello">Hi, I'm Luisfe 👋</h1>
                 <h2 className="subtitle">Frontend developer</h2>
-                <button id={theme} className="contactButton">Get in touch!</button>
+                <a href="mailto:luisfe.camacho@gmail.com" id={theme} className="contactButton">¡Contactame!</a>
             </article>
             <article className="presentationContainer">
                 <p className="presentationText">
-                Lorem ipsum dolor sit amet consectetur adipiscing elit elementum, sem
-                fusce felis porttitor nam quisque curae nibh erat, suscipit dapibus
-                mollis aptent vivamus metus mus. Id donec faucibus tincidunt congue
-                mauris diam facilisis pharetra sed, lobortis parturient fusce primis
-                euismod aptent sem mollis dapibus, hac a molestie platea rutrum felis
-                turpis hendrerit. Nascetur vestibulum consequat sociis in odio iaculis
-                eleifend, rhoncus eros id felis suspendisse erat, sed ultrices tempus
-                rutrum porttitor nisi.
+                ¡Bienvenido a mi Portfolio!<br/>
+                Aquí podrás ver un poco de mi trabajo. soy dearrollador web Frontend con conocimientos en diseño UX|UI.<br/>
+                Hace dos años descubrí mi pasión por el diseño y el desarrollo web, ahora intento construir aplicaciones responsive y accesibles para todo el mundo<br/>
+                Si te gusta lo que has visto o simplemente quieres hablar no dudes en contactarme :).
+                
                 </p>
             </article>
         </section>

@@ -1,0 +1,23 @@
+input{
+    display: none
+}
+label:first-of-type{
+    margin-left: var(--space-large);
+}
+label:nth-of-type(2){
+    margin-left: var(--space-small);
+}
+span{
+    margin-left: var(--space-small);
+}
+.change{
+    cursor: pointer;
+}
+
+@media (max-width: 600px){
+    
+    label:first-of-type{
+        margin-left: 0;
+    }
+
+}

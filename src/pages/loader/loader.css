@@ -1,0 +1,31 @@
+.loader{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--subtitle-font);
+    font-size: var(--small-fontsize);
+    text-align: center;
+    background-color: beige;
+}
+.loader__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+.luisfe{
+    margin-right: var(--space-xsmall);
+    
+
+}
+.portfolio{
+    font-weight: 100;
+    margin-left: 16px;
+}
+.separator{
+    font-family: var(--title-font);
+    font-size: var(--text-fontsize);
+    margin-left: 0;
+}
